@@ -1,0 +1,35 @@
+/* verifcation.wxss */
+.container {
+  /* padding: 0; */
+}
+
+
+
+.container-hang {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: #fff;
+}
+.tab-wrapper{
+  height: 50rpx;
+  line-height: 50rpx;
+  
+}
+.tab-wrapper .item{
+  display: inline-block;
+  width: calc(100% / 3);
+  height: 50rpx;
+   line-height: 50rpx; 
+  text-align: center;
+  border: 1px solid #fff;
+  cursor: pointer;
+  box-sizing: border-box;
+  transition: all 0.3s linear;
+  overflow: hidden;
+}
+.tab-wrapper .item.current{
+  color: red;
+  border: 1px solid red;
+}
+

@@ -1,0 +1,119 @@
+/* pages/test/test.wxss */
+
+.controls {
+  position: relative;
+  top: 50%;
+  height: 50px;
+  margin-top: -25px;
+  display: flex;
+}
+
+.play, .pause, .time {
+  flex: 1;
+  height: 100%;
+}
+
+.time {
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  line-height: 50px;
+}
+
+.img {
+  width: 40px;
+  height: 40px;
+  margin: 5px auto;
+}
+
+.show-down {
+  z-index: 2;
+  position: relative;
+  margin: 10rpx 10rpx;
+  background-color: #fff;
+  box-shadow: 2px 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 0 0 10px 10px;
+  animation: showDown 1s;
+}
+
+.show-down .show-list {
+  height: 80rpx;
+  padding: 0 30rpx;
+  line-height: 80rpx;
+  font-size: 34rpx;
+  color: #141414;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  border-top: 1px solid #f0f0f0;
+  cursor: pointer;
+}
+
+.show-down .show-list.active, .show-down .show-list:hover {
+  color: #fff;
+  background-color: #ddd;
+}
+
+@keyframes showDown {
+  0% {
+    z-index: -1;
+    transform: translate(0, 0), ;
+  }
+
+  100% {
+    z-index: 1;
+    transform: translate(0, 0), ;
+  }
+}
+
+.from-wrapper {
+  z-index: 2;
+  position:absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+}
+
+.test-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 20rpx 30rpx;
+  background-color: rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+.test-wrapper .textarea {
+  display: block;
+  position: static;
+  flex: 1;
+  min-height: 58rpx;
+  max-height: 138rpx;
+  padding: 9rpx 20rpx;
+  margin: 0 20rpx 0 0;
+  line-height: 40rpx;
+  background-color: #ccc;
+  border-radius: 24rpx;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+.test-wrapper .send {
+  width: 146rpx;
+  height: 46rpx;
+  padding: 0;
+  margin: 0;
+  line-height: 46rpx;
+  text-align: center;
+  font-size: 34rpx;
+  color: #fff;
+  background-color: #abcdef;
+}
+.test-wrapper .send.disabled{
+  background-color: #ccc;
+}
+
+.test-wrapper .send::after {
+  border: none;
+}

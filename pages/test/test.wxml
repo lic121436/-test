@@ -1,0 +1,24 @@
+<!--pages/test/test.wxml-->
+<view class="" >
+  <view class="time" bindtap="closeDown">
+    {{deadline}}
+  </view>
+
+  <view>
+    <input value="{{test}}" name="input" placeholder="请输入内容" bindfocus="showDown" bindblur="closeDown"></input>
+    <view class="show-down" wx:if="{{showFalg}}" catchtap="clickSelect">
+      <block wx:for="{{testList}}" wx:for-index="idx">
+        <view class="show-list {{showActive == idx ? 'active' : ''}}" data-content="{{item}}" data-idx="{{idx}}">{{item}}</view>
+      </block>
+    </view>
+  </view>
+
+
+    <form class="from-wrapper">
+      <view class="test-wrapper">
+        <textarea class="textarea" auto-height='true' fixed="true" cursor-spacing="10" bindinput="textareaChange"></textarea>
+        <button class="send {{btnDisabled ? 'disabled': ''}}" disabled="{{btnDisabled}}">发送</button>
+      </view>
+    </form>
+
+</view>

@@ -1,0 +1,15 @@
+<view class='container'>
+  <view>扫码结果：</view>
+  <view>
+    <text>{{result}}</text>
+
+  </view>
+  <view>
+  <image src='{{userInfo.avatarUrl}}' class='avatar' ></image>
+  <view class='text'>
+    {{userInfo.nickName}}
+  </view>
+  
+  </view>
+  <button type='primary' bindtap="scanCode">点击扫码</button>
+</view>
