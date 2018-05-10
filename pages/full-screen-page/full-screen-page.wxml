@@ -1,0 +1,48 @@
+<!--page/test13/test13.wxml-->
+<view class="fullpage-container" >
+  <scroll-view class="scroll-view" scroll-x="true" bindscroll="scroll" style="width: 100%">
+    <view class="scroll-view-item {{scrollIndex == 0 ? 'current' : ''}}" bindtap="tab" data-scrollIndex="0">
+      <text class="scroll-title">标题1</text>
+    </view>
+    <view class="scroll-view-item {{scrollIndex == 1 ? 'current' : ''}}" bindtap="tab" data-scrollIndex="1">
+      <text class="scroll-title">标题2</text>
+    </view>
+    <view class="scroll-view-item {{scrollIndex == 2 ? 'current' : ''}}" bindtap="tab" data-scrollIndex="2">
+      <text class="scroll-title">标题3</text>
+    </view>
+    <view class="scroll-view-item {{scrollIndex == 3 ? 'current' : ''}}" bindtap="tab" data-scrollIndex="3">
+      <text class="scroll-title">标题4</text>
+    </view>
+    <view class="scroll-view-item {{scrollIndex == 4 ? 'current' : ''}}" bindtap="tab" data-scrollIndex="4">
+      <text class="scroll-title">标题5</text>
+    </view>
+  </scroll-view>
+
+  <view class="fullpage-fill" style="transform:translate(-{{scrollIndex * 100}}%);margin-left: {{marginLeft}}px;" bindtouchstart="scrollTouchStart" bindtouchmove="scrollTouchMove" bindtouchend="scrollTouchEnd">
+    <view class="section section1 {{scrollIndex === 0 ? 'active' : ''}}">
+      <view class="section-title">测试页面一</view>
+      <view class="section-subtitle">page is test 1</view>
+    </view>
+
+    <view class="section section2 {{scrollIndex === 1 ? 'active' : ''}}">
+      <view class="section-title">测试页面二</view>
+      <view class="section-subtitle">page is test 2</view>
+    </view>
+
+    <view class="section section3 {{scrollIndex === 2 ? 'active' : ''}}">
+      <view class="section-title">测试页面三</view>
+      <view class="section-subtitle">page is test 3</view>
+    </view>
+
+    <view class="section section4 {{scrollIndex === 3 ? 'active' : ''}}">
+      <view class="section-title">测试页面四</view>
+      <view class="section-subtitle">page is test 4</view>
+    </view>
+
+    <view class="section section5 {{scrollIndex === 4 ? 'active' : ''}}">
+      <view class="section-title">测试页面五</view>
+      <view class="section-subtitle">page is test 5</view>
+    </view>
+
+  </view>
+</view>
