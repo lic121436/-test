@@ -1,0 +1,6 @@
+{
+  "disableScroll": true,
+  "usingComponents": {
+    "navigation": "/component/header/header"
+  }
+}

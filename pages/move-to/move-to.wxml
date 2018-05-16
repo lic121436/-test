@@ -1,0 +1,9 @@
+<!--pages/move-to/move-to.wxml-->
+<navigation background-color="#fff" color="#141414" fixed back="true" home="true">Title</navigation>
+
+<view class="move-box" style="top:{{moveTop}}px; left:{{moveLeft}}px;" bindtouchstart="touchstart" bindtouchmove="touchmove">
+  <view class="move-content"></view>
+</view>
+
+
+

@@ -6,6 +6,7 @@
     "pages/scan-code/scan-code",
     "pages/verification/verification",
     "pages/test/test",
+    "pages/move-to/move-to",
     "pages/full-screen-page/full-screen-page"
   ],
   "window":{
