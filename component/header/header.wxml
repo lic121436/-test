@@ -1,0 +1,17 @@
+
+<view class="navgation-wrapper {{[isx ? 'isx' : '', isAndroid ? 'android' : '']}}">
+  <view class="navgation-placeholder" wx:if="{{fixed}}" />
+  <view class="navigation" style="{{fixed ? 'position:fixed' : ''}}; background-color:{{backgroundColor}};color:{{color}};">
+    <view class="action-wrapper">
+      <button class="backgo" bind:tap="backFunction" wx:if="{{back}}">
+        <text class="iconfont icon-xiangzuojiantou"></text>
+      </button>
+      <navigator class="home" url="/pages/index/index" open-type="{{homeOpenType}}"  wx:if="{{home}}">
+        <text class="iconfont icon-shouye"></text>
+      </navigator>
+    </view>
+    <view class="title">
+      <slot></slot>
+    </view>
+  </view>
+</view>

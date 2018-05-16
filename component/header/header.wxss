@@ -1,0 +1,113 @@
+@font-face {font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_667113_k2k0zg1fq207wrk9.eot?t=1526368256528'); /* IE9*/
+  src: url('//at.alicdn.com/t/font_667113_k2k0zg1fq207wrk9.eot?t=1526368256528#iefix') format('embedded-opentype'), /* IE6-IE8 */
+  url('data:application/x-font-woff;charset=utf-8;base64,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') format('woff'),
+  url('//at.alicdn.com/t/font_667113_k2k0zg1fq207wrk9.ttf?t=1526368256528') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+*/
+  url('//at.alicdn.com/t/font_667113_k2k0zg1fq207wrk9.svg?t=1526368256528#iconfont') format('svg'); /* iOS 4.1- */
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-shouye:before { content: "\e621"; }
+
+.icon-xiangzuojiantou:before { content: "\e641"; }
+
+
+
+
+.navgation-wrapper {
+  width: 100%;
+}
+
+.navgation-wrapper .navgation-placeholder {
+  width: 100%;
+  height: 128rpx;
+}
+
+.navgation-wrapper .navigation {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 88rpx;
+  padding-top: 40rpx;
+}
+
+.navgation-wrapper .navigation .action-wrapper {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 120rpx;
+  padding-left: 20rpx;
+  font-size: 26rpx;
+}
+
+.navgation-wrapper .navigation .action-wrapper button {
+  padding: 0;
+  margin: 0;
+  width: auto;
+  height: auto;
+  background-color: transparent;
+  border-radius: 0;
+}
+
+.navgation-wrapper .navigation .action-wrapper button::after {
+  border: none;
+}
+
+.navgation-wrapper .navigation .action-wrapper .iconfont {
+  margin-right: 20rpx;
+  font-size: 36rpx;
+  color: #141414;
+}
+
+.navgation-wrapper .navigation .action-wrapper .backgo {
+  margin-right: 20rpx;
+}
+
+.navgation-wrapper .navigation .action-wrapper .home .iconfont {
+  font-size: 45rpx;
+}
+
+.navgation-wrapper .navigation .title {
+  width: 470rpx;
+  height: 44rpx;
+  line-height: 44rpx;
+  text-align: center;
+  font-size: 26rpx;
+  color: #141414;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+.navgation-wrapper.isx .navgation-placeholder {
+  height: 196rpx;
+}
+
+.navgation-wrapper.isx .navigation {
+  padding-top: 88rpx;
+}
+
+.navgation-wrapper.android .navgation-placeholder {
+  height: 144rpx;
+}
+
+.navgation-wrapper.android .navigation {
+  height: 96rpx;
+  padding-top: 68rpx;
+}
+
+.navgation-wrapper.android .navigation .title {
+  text-align: left;
+}
+
